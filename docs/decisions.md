@@ -2,17 +2,21 @@
 
 | Topic | Decision |
 | --- | --- |
-| Umbrella project | Evrisselle |
-| First product | Evrisselle Ionis Undecima |
-| Purpose | Explore a separately selectable Plasma X11 session for users who need X11 |
+| Project | Sini |
+| Current product/session | Sini Plumelet (X11) |
+| Purpose | Provide a separately selectable KDE Plasma X11 session for users who need X11 |
 | First distribution | openSUSE Tumbleweed x86_64 |
 | Target baseline | Plasma 6.8.1 source and package family |
-| Target hardware | Mac Pro 5,1; no hardware validation is claimed here |
+| Target hardware | Mac Pro 5,1; no successful hardware validation is claimed |
 | Session model | X11 and Wayland are separate choices; preserve Wayland as the stable fallback |
-| Initial implementation | Downstream forward-port of removed X11 session and runtime paths |
+| Initial implementation | Downstream forward-port of removed Plasma X11 session and runtime paths |
 | KWin | Pinned SonicDE `sonic-win` community fork, packaged separately as `kwin6-x11` |
 | Maintenance | Solo maintainer, best-effort updates, no SLA |
 | Public release | Only after diagnosis, reproducible build evidence, licensing decisions, and acceptance checks |
+
+## Naming and scope
+
+Sini is the project name. Plumelet (X11) is the current name of the separately selectable Plasma X11 session. Plumelet does not replace KDE Plasma, and it does not replace or redefine the X11 protocol. It is a downstream effort to restore a selectable Plasma X11 desktop while leaving the distribution-provided Wayland session intact.
 
 ## Current engineering assessment
 
