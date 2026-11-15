@@ -1,4 +1,4 @@
-# KWin X11 candidate for Ionis Undecima
+# KWin X11 candidate for Sini Plumelet (X11)
 
 This recipe packages the SonicDE `sonic-win` community fork at commit `02cfdd70b575d0732a92e0311a30c93e5fa823df` (recorded upstream date: 2026-10-25). The fork installs `libkwin-x11.so.6` and plugins separately from the distribution's Wayland KWin files. The package retains the `sonic-win` executable and adds `kwin_x11` and `plasma-kwin_x11.service` compatibility links for the restored Plasma X11 startup path.
 
