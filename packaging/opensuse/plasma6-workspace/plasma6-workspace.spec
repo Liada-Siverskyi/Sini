@@ -31,7 +31,7 @@
 %bcond_without released
 Name:           plasma6-workspace
 Version:        6.7.5
-Release:        2.evr1
+Release:        2.sini1
 Summary:        The KDE Plasma Workspace Components
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org/
