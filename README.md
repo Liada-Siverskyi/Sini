@@ -1,16 +1,18 @@
-# Evrisselle Ionis Undecima
+# Sini Plumelet (X11)
 
-Evrisselle is an independent downstream project exploring a separately selectable KDE Plasma X11 session for openSUSE Tumbleweed x86_64. **Ionis Undecima** is the session concept; Plasma (Wayland) remains the distribution-provided session and must remain usable.
+**Sini** is the project. **Plumelet (X11)** is its current X11-session effort: a separately selectable KDE Plasma X11 session for openSUSE Tumbleweed x86_64.
 
-This is not an official KDE product. KDE source, the SonicDE KWin fork, and openSUSE packaging retain their own names, licenses, and notices.
+Plumelet does not replace KDE Plasma or the X11 protocol. It restores a Plasma X11 login path using a downstream Plasma Workspace port and a separately packaged KWin X11 implementation. The distribution-provided Plasma Wayland session remains separate and must stay usable.
+
+This is an independent downstream project, not an official KDE product. KDE, SonicDE, and openSUSE source and packaging retain their own names, licenses, and notices.
 
 ## Status
 
 The public source contains experimental packaging for a Plasma Workspace 6.8.1 X11 forward-port and a separately packaged SonicDE KWin X11 fork. The selected target is a Mac Pro 5,1 running openSUSE Tumbleweed x86_64.
 
-The earlier X11 experiment did not produce a usable desktop on the target: the reported result was a black screen with an empty panel. The project is therefore **not ready to install or use**. The stable Wayland session is the required fallback and must be preserved throughout further work. Do not infer a successful target login from package installation or from the historical test notes below.
+An earlier X11 experiment did not produce a usable desktop on the target: the reported result was a black screen with an empty panel. Plumelet is therefore **not ready to install or use**. The stable Wayland session is the required fallback and must be preserved throughout further work. Do not infer a successful target login from package installation or historical test notes.
 
-The repository's previous documentation recorded a clean build and X11/Wayland logins in a disposable VM, as well as a package installation on the target. Those are historical maintainer-reported results; the repository contains no build logs, VM image, test transcript, or hardware capture to independently reproduce them. They do not resolve the black-screen report. No new build or hardware test is claimed by this revision.
+Previous project documentation recorded a clean build and X11/Wayland logins in a disposable VM, as well as a package installation on the target. Those are historical maintainer-reported results; the repository contains no build logs, VM image, test transcript, or hardware capture to independently reproduce them. They do not resolve the black-screen report. No new build or hardware test is claimed by this revision.
 
 ## Source layout
 
