@@ -7,7 +7,7 @@ This OBS package source is an experimental forward-port for Plasma Workspace 6.8
 - `plasma6-workspace.spec` is based on the openSUSE Factory 6.8.1 package recipe.
 - `_service` fetches `plasma-workspace-6.8.1.tar.xz` and checks SHA-256 `e2abb7e5b5fc8d59fe369d3ab4ea776e10684af0fb1a8a3275e9df64eff97d20`.
 - `0001-Restore-X11-session-on-plasma-6.8.1.patch` restores selected removed paths against that release archive.
-- `0002-Evrisselle-session-branding.patch` supplies the branded SDDM session entry.
+- `0002-Sini-Plumelet-session-branding.patch` supplies the `Sini Plumelet (X11)` SDDM session entry.
 - `0003` through `0010` restore or adapt additional X11 APIs, KRDB linkage, XWayland helper lookup, and tray pointer handling.
 - The openSUSE patches, keyring, and configuration files are included from the matching package source.
 
