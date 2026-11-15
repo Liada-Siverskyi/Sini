@@ -4,8 +4,8 @@
 
 Name:           kwin6-x11
 Version:        6.8.0
-Release:        2.1.evrisselle1
-Summary:        KDE KWin X11 window manager for Evrisselle Ionis Undecima
+Release:        2.1.sini1
+Summary:        KDE KWin X11 window manager for Sini Plumelet (X11)
 License:        GPL-2.0-or-later AND GPL-3.0-or-later
 URL:            https://github.com/Sonic-DE/sonic-win
 Source0:        https://github.com/Sonic-DE/sonic-win/archive/%{sonic_commit}.tar.gz
