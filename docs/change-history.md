@@ -6,7 +6,7 @@ This is the complete commit list present in the public `main` history at base re
 | --- | --- |
 | `34d8ac3` | Initial project README |
 | `df6fef7` | Add project ignore rules |
-| `28f88bb` | Document Ionis Undecima prototype |
+| `28f88bb` | Document the initial Plasma X11-session prototype |
 | `96df96b` | Add architecture and packaging design |
 | `cfcc674` | Add project planning and audit documents |
 | `b6f3a0c` | Add openSUSE package documentation |
