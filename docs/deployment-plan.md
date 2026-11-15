@@ -16,7 +16,7 @@ The package source targets Plasma 6.8.1. KDE removed the X11 login path and seve
 4. Build the matched package set in a disposable openSUSE environment against the documented snapshot.
 5. In a disposable VM, validate X11 startup, panel interaction, logout/login, input, display changes, lock/unlock, suspend/resume, X11 applications, Wayland startup, and rollback.
 6. Review package transactions and rollback instructions for a future hardware test only after the isolated acceptance checks pass. Do not run that test as part of this source work.
-7. Resolve licensing for original Evrisselle materials and publish source, notices, checksums, instructions, and acceptance evidence together.
+7. Resolve licensing for original Sini materials and publish source, notices, checksums, instructions, and acceptance evidence together.
 
 ## Existing reports and evidence limits
 
