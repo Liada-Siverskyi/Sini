@@ -335,7 +335,7 @@ Requires:       plasma6-session = %{version}-%{release}
 Requires:       kwin6-x11 >= 6.8.0
 Requires:       xorg-x11-server
 
-%description -n evrisselle-ionis-undecima-session
+%description -n sini-plumelet-session
 A separately selectable Plasma X11 session maintained by the Sini project.
 
 %package -n sddm-qt6-branding-openSUSE
@@ -641,7 +641,7 @@ install -Dm 0644 %{SOURCE4} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %dir %{_datadir}/wayland-sessions/
 %{_kf6_sharedir}/wayland-sessions/plasmawayland.desktop
 
-%files -n evrisselle-ionis-undecima-session
+%files -n sini-plumelet-session
 %license LICENSES/*
 %{_kf6_bindir}/startplasma-x11
 %{_datadir}/xsessions/plasmax11.desktop
