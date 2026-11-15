@@ -31,7 +31,7 @@
 %bcond_without released
 Name:           plasma6-workspace
 Version:        6.8.1
-Release:        2.1.evrisselle1
+Release:        2.1.sini1
 Summary:        The KDE Plasma Workspace Components
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org/
@@ -55,7 +55,7 @@ Patch505:       0001-Revert-lookandfeel-Drop-VirtualKeyboardLoader.patch
 Patch506:       0001-Revert-No-icons-on-the-desktop-by-default.patch
 # Restore the removed X11 session and runtime paths for the 6.8.1 baseline.
 Patch507:       0001-Restore-X11-session-on-plasma-6.8.1.patch
-Patch508:       0002-Evrisselle-session-branding.patch
+Patch508:       0002-Sini-Plumelet-session-branding.patch
 Patch509:       0003-Restore-X11-task-shading-api.patch
 Patch510:       0004-Proxy-X11-task-shading.patch
 Patch511:       0005-Restore-X11-task-shading-forwarders.patch
@@ -328,15 +328,15 @@ BuildArch:      noarch
 This package contains the startup scripts necessary to start a KDE
 Plasma 6 session.
 
-%package -n evrisselle-ionis-undecima-session
-Summary:        Evrisselle Ionis Undecima Plasma X11 session
+%package -n sini-plumelet-session
+Summary:        Sini Plumelet (X11) session
 Requires:       plasma6-workspace = %{version}-%{release}
 Requires:       plasma6-session = %{version}-%{release}
 Requires:       kwin6-x11 >= 6.8.0
 Requires:       xorg-x11-server
 
-%description -n evrisselle-ionis-undecima-session
-A separately selectable Plasma X11 session maintained by Evrisselle.
+%description -n sini-plumelet-session
+A separately selectable Plasma X11 session maintained by the Sini project.
 
 %package -n sddm-qt6-branding-openSUSE
 Summary:        Plasma 6 branding for SDDM
@@ -641,7 +641,7 @@ install -Dm 0644 %{SOURCE4} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %dir %{_datadir}/wayland-sessions/
 %{_kf6_sharedir}/wayland-sessions/plasmawayland.desktop
 
-%files -n evrisselle-ionis-undecima-session
+%files -n sini-plumelet-session
 %license LICENSES/*
 %{_kf6_bindir}/startplasma-x11
 %{_datadir}/xsessions/plasmax11.desktop

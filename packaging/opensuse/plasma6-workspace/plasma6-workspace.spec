@@ -31,7 +31,7 @@
 %bcond_without released
 Name:           plasma6-workspace
 Version:        6.7.5
-Release:        2.evr1
+Release:        2.sini1
 Summary:        The KDE Plasma Workspace Components
 License:        GPL-2.0-or-later
 URL:            https://www.kde.org/
@@ -42,8 +42,8 @@ Source2:        plasma.keyring
 %endif
 Source3:        sddm.conf
 Source4:        waitforkded.conf
-# Evrisselle product branding for the restored X11 session
-Patch505:       0001-Evrisselle-session-branding.patch
+# Sini Plumelet (X11) session branding
+Patch505:       0001-Sini-Plumelet-session-branding.patch
 BuildRequires:  fdupes
 BuildRequires:  kf6-breeze-icons
 BuildRequires:  kf6-extra-cmake-modules >= %{kf6_version}
@@ -313,16 +313,16 @@ BuildArch:      noarch
 This package contains the startup scripts necessary to start a KDE
 Plasma 6 session.
 
-%package -n evrisselle-ionis-undecima-session
-Summary:        Evrisselle Ionis Undecima X11 session
+%package -n sini-plumelet-session
+Summary:        Sini Plumelet (X11) session
 Requires:       kwin6-x11 >= %{_plasma6_bugfix}
 Requires:       plasma6-session = %{version}-%{release}
 Requires:       plasma6-workspace = %{version}-%{release}
 Requires:       xf86-input-libinput
 Requires:       xorg-x11-server
 
-%description -n evrisselle-ionis-undecima-session
-This package provides the Evrisselle Ionis Undecima login session based
+%description -n sini-plumelet-session
+This package provides the Sini Plumelet (X11) login session based
 on KDE Plasma and running on X11. It is selectable alongside the system's
 Plasma Wayland session.
 
@@ -357,9 +357,9 @@ This package confirms defaults for SDDM suitable for Plasma 6.
 mkdir -p %{buildroot}%{_kf6_iconsdir}/hicolor/32x32/apps/
 cp %{_kf6_iconsdir}/breeze/preferences/32/preferences-desktop-color.svg %{buildroot}%{_kf6_iconsdir}/hicolor/32x32/apps/
 
-# Give the X11 session its Evrisselle product name while preserving the
+# Give the X11 session its Sini Plumelet (X11) name while preserving the
 # upstream Wayland session under the openSUSE-compatible name.
-mv %{buildroot}%{_kf6_sharedir}/xsessions/{plasmax11,evrisselle-ionis-undecima}.desktop
+mv %{buildroot}%{_kf6_sharedir}/xsessions/{plasmax11,sini-plumelet}.desktop
 mv %{buildroot}%{_kf6_sharedir}/wayland-sessions/{plasma,plasmawayland}.desktop
 
 install -Dm 0644 %{SOURCE3} %{buildroot}%{_prefix}/lib/sddm/sddm.conf.d/10-plasma.conf
@@ -618,10 +618,10 @@ install -Dm 0644 %{SOURCE4} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %dir %{_datadir}/wayland-sessions/
 %{_kf6_sharedir}/wayland-sessions/plasmawayland.desktop
 
-%files -n evrisselle-ionis-undecima-session
+%files -n sini-plumelet-session
 %license LICENSES/*
 %{_kf6_bindir}/startplasma-x11
-%{_kf6_sharedir}/xsessions/evrisselle-ionis-undecima.desktop
+%{_kf6_sharedir}/xsessions/sini-plumelet.desktop
 
 %files -n sddm-qt6-branding-openSUSE
 %dir %{_prefix}/lib/sddm/
