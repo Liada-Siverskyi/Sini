@@ -5,7 +5,7 @@
 ```text
 SDDM session selector
   ├─ Plasma (Wayland)                   openSUSE-provided session; preserve as fallback
-  └─ Evrisselle Ionis Undecima         downstream X11 session entry
+  └─ Sini Plumelet (X11)                 downstream X11 session entry
        └─ startplasma-x11               restored by the Workspace patch series
             └─ kwin_x11                compatibility link to the pinned SonicDE build
 ```
@@ -26,4 +26,4 @@ Every downstream binary and plugin must be built against one documented Tumblewe
 
 ## Branding
 
-The session entry is branded `Evrisselle Ionis Undecima` and identifies its relationship to Plasma. Retain upstream copyright and license notices. Do not use KDE logos or imply KDE support or endorsement.
+The session entry is branded `Sini Plumelet (X11)` and identifies its relationship to Plasma. Plumelet is a Plasma X11 session port; it does not replace KDE Plasma or the X11 protocol. Retain upstream copyright and license notices. Do not use KDE logos or imply KDE support or endorsement.
