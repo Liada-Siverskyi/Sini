@@ -10,7 +10,7 @@ This repository combines downstream packaging with source from KDE, openSUSE, an
 | KWin X11 candidate | As declared in `kwin6-x11.spec` (`GPL-2.0-or-later AND GPL-3.0-or-later`) | Source is pinned to the SonicDE commit in the spec and `_service`; preserve the source tree's license files. Verify that the recipe expression matches the pinned tree before publishing binaries. |
 | openSUSE spec additions and included packaging files | Per-file origin/license is not fully catalogued here | Retain the matching OBS source and its notices; identify modifications as downstream changes. |
 | Downstream patches | Inherit or modify the license of the affected upstream files unless the patch explicitly states otherwise | Keep upstream copyright notices and make downstream authorship clear. Do not treat patches as a new license for upstream code. |
-| Original Evrisselle documentation, scripts, and project metadata | No repository-wide license has been selected | Reuse and redistribution rights for these original materials are not granted by this file. A maintainer decision and explicit license notices are needed before representing them as openly licensed. |
+| Original Sini documentation, scripts, and project metadata | No repository-wide license has been selected | Reuse and redistribution rights for these original materials are not granted by this file. A maintainer decision and explicit license notices are needed before representing them as openly licensed. |
 
 ## Source and build records
 
