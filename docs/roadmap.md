@@ -16,7 +16,7 @@ No package operation, SDDM restart, session switch, or permission change is part
 | Reproduce and diagnose the black-screen / empty-panel failure | Open | Logs and screenshots from an isolated environment; root cause and fix |
 | Validate the complete X11 desktop in a disposable VM | Not established by repository evidence | Repeatable login, panel, input, logout, and Wayland-preservation results |
 | Validate broader hardware and session behavior | Not started / not evidenced | Display, lock, suspend/resume, applications, rollback, and repeated cycles |
-| Establish licensing for original Evrisselle materials | Open | Maintainer-selected license and file-level notices |
+| Establish licensing for original Sini materials | Open | Maintainer-selected license and file-level notices |
 | Publish a tested release | Blocked on diagnosis, licensing, and reproducible acceptance evidence | Source, licenses, checksums, build records, and test report together |
 
 ## Acceptance criteria
