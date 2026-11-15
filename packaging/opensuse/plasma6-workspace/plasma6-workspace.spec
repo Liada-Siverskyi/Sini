@@ -321,7 +321,7 @@ Requires:       plasma6-workspace = %{version}-%{release}
 Requires:       xf86-input-libinput
 Requires:       xorg-x11-server
 
-%description -n evrisselle-ionis-undecima-session
+%description -n sini-plumelet-session
 This package provides the Sini Plumelet (X11) login session based
 on KDE Plasma and running on X11. It is selectable alongside the system's
 Plasma Wayland session.
@@ -357,7 +357,7 @@ This package confirms defaults for SDDM suitable for Plasma 6.
 mkdir -p %{buildroot}%{_kf6_iconsdir}/hicolor/32x32/apps/
 cp %{_kf6_iconsdir}/breeze/preferences/32/preferences-desktop-color.svg %{buildroot}%{_kf6_iconsdir}/hicolor/32x32/apps/
 
-# Give the X11 session its Evrisselle product name while preserving the
+# Give the X11 session its Sini Plumelet (X11) name while preserving the
 # upstream Wayland session under the openSUSE-compatible name.
 mv %{buildroot}%{_kf6_sharedir}/xsessions/{plasmax11,sini-plumelet}.desktop
 mv %{buildroot}%{_kf6_sharedir}/wayland-sessions/{plasma,plasmawayland}.desktop
@@ -618,10 +618,10 @@ install -Dm 0644 %{SOURCE4} %{buildroot}%{_userunitdir}/plasma-plasmashell.servi
 %dir %{_datadir}/wayland-sessions/
 %{_kf6_sharedir}/wayland-sessions/plasmawayland.desktop
 
-%files -n evrisselle-ionis-undecima-session
+%files -n sini-plumelet-session
 %license LICENSES/*
 %{_kf6_bindir}/startplasma-x11
-%{_kf6_sharedir}/xsessions/evrisselle-ionis-undecima.desktop
+%{_kf6_sharedir}/xsessions/sini-plumelet.desktop
 
 %files -n sddm-qt6-branding-openSUSE
 %dir %{_prefix}/lib/sddm/
